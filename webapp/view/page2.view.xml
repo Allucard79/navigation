@@ -1,0 +1,41 @@
+<mvc:View controllerName="navigation.controller.page2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	displayBlock="true" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page showNavButton="true" navButtonPress="onNavBack" title="{i18n>EmployeeDetails}">
+				<content>
+					<VBox>
+					<Toolbar>
+					<Label text="{i18n>EmployeeIDColon}" />
+							<Text id="employeeID" />
+						<ToolbarSpacer />
+					</Toolbar>
+						<f:SimpleForm
+						minWidth="1024"
+						editable="false"
+						layout="ResponsiveGridLayout"
+						labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+						columnsL="1" columnsM="1">
+						<f:content>
+							<Label text="{i18n>FirstName}" />
+							<Text id="firstName" />
+							<Label text="{i18n>LastName}" />
+							<Text id="lastName" />
+							<Label text="{i18n>Address}" />
+							<Text id="address" />
+							<Label text="{i18n>City}" />
+							<Text id="city" />
+							<Label text="{i18n>PostalCode}" />
+							<Text id="postalCode" />
+							<Label text="{i18n>PhoneHome}" />
+							<Text id="homePhone" />
+							<Label text="{i18n>Country}" />
+							<Text id="country" />
+						</f:content>
+					</f:SimpleForm>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

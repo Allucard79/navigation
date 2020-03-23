@@ -1,0 +1,21 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="navigation.controller.page1" displayBlock="true">
+	<App id="app">
+		<pages>
+			<Page showHeader="false">
+					<subHeader>
+					<Toolbar>
+					<Title text="Employess" titleStyle="H1"/>
+						<ToolbarSpacer width="30%"/>
+						<SearchField id="search" placeholder="Szukaj" liveChange="onSearch" width="30%"/>
+					</Toolbar>
+				</subHeader>
+				<content>
+					<List id="employees" items="{/Objects}">
+		            <StandardListItem title="{FirstName} {LastName}" iconDensityAware="false" iconInset="false" type="Navigation" press="onPress" busyIndicatorSize="Auto"/>
+		        </List>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
